@@ -34,7 +34,7 @@ function SignInMobile() {
   getRedirectResult(auth)
   .then((result) => {
     if (result.credential) {
-      window.location.assign("/pages/home.html");
+      window.location.assign("./pages/home.html");
     }
   }).catch((error) => {
     // Handle Errors here.
@@ -60,7 +60,7 @@ async function signInPc (){
     var user = result.user;
     // IdP data available in result.additionalUserInfo.profile.
       // ...
-      // window.location.assign("/pages/home.html");
+      window.location.assign("./pages/home.html");
   }).catch((error) => {
     // Handle Errors here.
     var errorCode = error.code;
