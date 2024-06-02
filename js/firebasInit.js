@@ -3,13 +3,12 @@ import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.2/fireba
 // Your web app's Firebase configuration
 // For Firebase JS SDK v7.20.0 and later, measurementId is optional
 const firebaseConfig = {
-    apiKey: "AIzaSyBf4Z-5S7VhFmIACU0o2G2qCd5BOqj_03o",
-    authDomain: "voted-app.firebaseapp.com",
-    projectId: "voted-app",
-    storageBucket: "voted-app.appspot.com",
-    messagingSenderId: "594677514204",
-    appId: "1:594677514204:web:666c10c0d7ea3f71fe1919",
-    measurementId: "G-2R6BPTNJB3"
+    apiKey: "AIzaSyAQ5Uv4lnOoYYNHtKUWzlwom5B96dhNpS4",
+    authDomain: "voted-web-app-9e54c.firebaseapp.com",
+    projectId: "voted-web-app-9e54c",
+    storageBucket: "voted-web-app-9e54c.appspot.com",
+    messagingSenderId: "213625233671",
+    appId: "1:213625233671:web:bdee62afcb0bc157f725a2"
   };
   
 // Initialize Firebase
