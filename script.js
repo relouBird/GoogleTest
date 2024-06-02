@@ -21,8 +21,14 @@ var provider = new GoogleAuthProvider(app);
 var googleButton = document.querySelector(".but.but1");
 var appleButton = document.querySelector(".but.but2");
 
+function isMobileDevice() {
+  return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(
+    navigator.userAgent
+  );
+}
+
 googleButton.addEventListener("click", async (e) => {
-  if (window.screen.width < 500) {
+  if (isMobileDevice()) {
     signInWithRedirect(auth, provider);
     await getRedirectResult(auth)
       .then((result) => {
