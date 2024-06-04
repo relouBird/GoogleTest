@@ -99,3 +99,18 @@ body{
 .progress-box:last-child .progress-bar span{
     background: var(--exceptionnal-color);
 }
+
+@media (max-width : 500px) {
+    .main{
+        width: 100%;
+        height: 65%;
+    }
+
+    h3, h2{
+        padding-left: 0.5em;
+    }
+
+    .progress-box{
+        margin: 0 auto;
+    }
+}
