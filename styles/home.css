@@ -9,7 +9,9 @@
 
 :root{
     --primary-color:#26C98A;
+    --exceptionnal-color: #FFD47D;
     --secondary-color:#000000C0;
+    --secondary-color2:#000000A0;
     --box-border-div :#0000001C;
     --box-bg-div: #0000000D;
 }
@@ -20,4 +22,80 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.main{
+    width: 45%;
+    height: 80%;
+    /* background: #0000008B; */
+    padding: 3em;
+}
+
+.main h2{
+    margin-bottom: 0.2em;
+    color: var(--secondary-color);
+}
+
+.main h3{
+    margin-bottom: 1em;
+    color: var(--secondary-color2);
+}
+
+.progress-box{
+    width: 80%;
+    display: block;
+    text-align: left;
+    height: 5.5em;
+    background: var(--box-bg-div);
+    cursor: pointer;
+    padding: 0.75em 1em;
+    border-radius: 7px;
+    border: 2px solid var(--box-border-div);
+}
+.progress-box:last-child{
+    margin-top: 1.5em;
+}
+
+.progress-title{
+    color: var(--secondary-color2);
+    margin-left: 0.55em;
+    position: relative;
+    font-size: 15.5px;
+}
+
+.progress-title::before{
+    content: "";
+    display: block;
+    position: absolute;
+    left: -10px;
+    top: 5px;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: var(--primary-color);
+}
+.progress-box:last-child .progress-title:before{
+    background: var(--exceptionnal-color);
+}
+
+.progress-bar{
+    display: block;
+    margin-top: 0.75em;
+    width: 100%;
+    height: 0.75em;
+    background-color: var(--box-border-div);
+    border-radius: 14px;
+
+}
+
+.progress-bar span{
+    display: block;
+    width: 0%;
+    height: 0.75em;
+    background: var(--primary-color);
+    border-radius: 14px;
+}
+
+.progress-box:last-child .progress-bar span{
+    background: var(--exceptionnal-color);
 }
