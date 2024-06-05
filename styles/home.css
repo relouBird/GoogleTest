@@ -63,6 +63,12 @@ body{
     font-size: 15.5px;
 }
 
+.progress-title span:last-child{
+    font-weight: bold;
+    font-size: 16px;
+    color: var(--primary-color);
+}
+
 .progress-title::before{
     content: "";
     display: block;
@@ -76,6 +82,10 @@ body{
 }
 .progress-box:last-child .progress-title:before{
     background: var(--exceptionnal-color);
+}
+
+.progress-box:last-child .progress-title span:last-child{
+    color: var(--exceptionnal-color);
 }
 
 .progress-bar{
