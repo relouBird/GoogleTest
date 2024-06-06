@@ -64,6 +64,14 @@ googleButton.addEventListener("click", async (e) => {
         var credential = error.credential;
         // ...
       });
+      onAuthStateChanged(auth,(user) => {
+        if (user) {
+          // L'utilisateur est déjà authentifié, rediriger vers la page /pages/home.html
+          window.location.assign("./pages/home.html");
+        } else {
+          // L'utilisateur n'est pas authentifié, ne pas rediriger
+        }
+      });
       
   } else {
     await signInWithPopup(auth, provider)
