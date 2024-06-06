@@ -18,14 +18,6 @@ const auth = getAuth(app);
 
 var provider = new GoogleAuthProvider(app);
 
-onAuthStateChanged(auth,(user) => {
-  if (user) {
-    // L'utilisateur est déjà authentifié, rediriger vers la page /pages/home.html
-    window.location.assign("./pages/home.html");
-  } else {
-    // L'utilisateur n'est pas authentifié, ne pas rediriger
-  }
-});
 
 var googleButton = document.querySelector(".but.but1");
 var appleButton = document.querySelector(".but.but2");
