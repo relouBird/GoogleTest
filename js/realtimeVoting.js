@@ -1,4 +1,4 @@
-const socket = io("http://localhost:8000");
+const socket = io("https://realtime-server-voted.vercel.app");
 
 let box = document.querySelectorAll(".progress-box");
 
