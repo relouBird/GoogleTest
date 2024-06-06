@@ -1,4 +1,4 @@
-const socket = io("https://realtime-server-voted.vercel.app");
+const socket = io("https://resonant-crystal-sting.glitch.me");
 
 let box = document.querySelectorAll(".progress-box");
 
